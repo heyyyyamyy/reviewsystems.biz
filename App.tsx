@@ -3,7 +3,7 @@ import { NavBar } from './components/NavBar';
 import { ReviewCard } from './components/ReviewCard';
 import { WriteReviewModal } from './components/WriteReviewModal';
 import { Review, PageView, CompanySummary } from './types';
-import { Send, MapPin, Mail, Phone, ArrowRight, PenSquare, HardHat } from 'lucide-react';
+import { Send, MapPin, Mail, Phone, ArrowRight, PenSquare, HardHat, ExternalLink } from 'lucide-react';
 
 // Mock Data with Indian Names and Construction Focus
 const INITIAL_REVIEWS: Review[] = [
@@ -773,10 +773,12 @@ const App: React.FC = () => {
           <p className="text-slate-500 text-sm">
             © {new Date().getFullYear()} ReviewSystems.biz. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm font-medium text-slate-600">
+          <div className="flex gap-6 text-sm font-medium text-slate-600 items-center">
             <a href="#" className="hover:text-brand-600">Privacy Policy</a>
             <a href="#" className="hover:text-brand-600">Terms of Service</a>
-            <a href="#" className="hover:text-brand-600">Cookie Settings</a>
+            <a href="https://vercel.com/new" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-brand-600 text-slate-800 font-semibold">
+              Deploy on Vercel <ExternalLink size={14} />
+            </a>
           </div>
         </div>
       </footer>
