@@ -611,8 +611,8 @@ const App: React.FC = () => {
         <div className="relative z-10 px-8 py-16 md:px-16 text-center md:text-left flex flex-col md:flex-row items-center justify-between">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
-              Zenthera Groups Reviews & <br/>
-              <span className="text-brand-400">Construction Insights.</span>
+              Construction Reviews & <br/>
+              <span className="text-brand-400">Industry Insights.</span>
             </h1>
             <p className="text-lg text-slate-300 mb-8 max-w-lg">
               ReviewSystems.biz is the trusted platform for construction and corporate insights. 
